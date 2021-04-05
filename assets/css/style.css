@@ -1,0 +1,609 @@
+/* Local Fonts */
+@font-face {
+    font-family: 'SomaticRounded';
+    src: url(../fonts/SomaticRounded/Somatic-Rounded.otf);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 65px;
+    text-rendering: optimizeLegibility;
+}
+
+main {
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+p {
+    color: #8F8F8F;
+    margin: 0;
+}
+
+.bg-primary {
+    background-color: #90C4C4;
+}
+
+.bg-secondary {
+    background-color: #23A397;
+}
+
+.icon-color {
+    background-color: #489C9C;
+}
+
+.btn-success-custom {
+    background: #90C4C4;
+    color: #FFF;
+}
+
+.btn-success-custom:hover {
+    background: #23A397;
+    color: #FFF;
+}
+
+.container-fluid {
+    padding: 1% 17%;
+}
+
+/* Navbar  */
+.navbar .container-fluid {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.brand-name{
+    font-family: 'SomaticRounded', sans-serif;
+    font-size: 2rem;
+    color: #489C9C;
+}
+
+.nav-custom {
+    margin: 0 24px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav-dropdown-item {
+    font-weight: 500;
+}
+
+/* Header */
+#header {
+    background-color: #EBFAFA;
+}
+
+#header .container-fluid{
+    padding: 8% 17%;
+}
+
+.header-image{
+    width: 150%;
+}
+
+.header-text {
+    font-size: 3.5rem;
+    margin-top: 30%;
+    padding-bottom: 8px;
+}
+
+.search-icon-header {
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.form-control-header {
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Trips */
+#trips {
+    text-align: center;
+}
+.trips-card-header {
+    padding: 0;
+}
+.trips-title {
+    margin: 2rem;
+}
+
+.trips-title::after{
+    display: block;
+    height: 2px;
+    background-color: #90C4C4;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.trips-card {
+    position: relative;
+    top: 0;
+    border-radius: 0;
+    margin-bottom: 40px;
+}
+
+.trips-card:hover {
+    top: 10px;
+    left: 10px;
+    box-shadow: -10px -10px 2px 1px rgba(144, 196, 196, 1);
+    transition: 1s;
+}
+
+.trips-card-header-image {
+    width: 100%;
+}
+
+/* Subscribe */
+#subscribe {
+    text-align: center;
+}
+
+.subscribe-title {
+    margin: 2rem 0;
+}
+
+.subscribe-title::after{
+    display: block;
+    height: 2px;
+    background-color: #90C4C4;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.subscribe-card-header {
+    color: #FFF;
+    background-color: #90C4C4;
+    font-weight: 600;
+}
+
+.subscribe-card-header-text {
+    color: #FFF;
+}
+
+.subscribe-card-body {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.input-subscribe-group-email {
+    margin-bottom: 20px;
+}
+
+.input-subscribe-email {
+    border: none;
+    border-bottom: 1px solid #90C4C4;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.input-subscribe-email:focus {
+    box-shadow: 0 1px #489C9C;
+    transition: 0.5s;
+}
+
+.input-subscribe-submit {
+    padding: 10px;
+}
+
+/* Blog page */
+
+#header-blog {
+    background-color: #E4F5F4;
+    position: relative;
+}
+
+#header-blog .container-fluid {
+    padding: 5% 5% 2%;
+}
+
+.header-frame-top-left {
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 0;
+    height: 100px;
+}
+
+.header-frame-top-right {
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    right: 0;
+    height: 100px;
+}
+
+.header-frame-top {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    z-index: 1;
+}
+
+.header-wave-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.col-header-title {
+    align-self: center;
+}
+
+.header-title {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #84D1D2;
+    text-shadow: -6px -6px #CEEBEA;
+}
+
+.col-header-cerita-image {
+    text-align: center;
+}
+
+#blog .container-fluid {
+    padding: 5% 10%;
+}
+
+#blog .card {
+    position: relative;
+    width: 100%;
+}
+
+#blog img {
+    width: 100%;
+}
+
+/* Contact Us Page */
+#contact {
+    text-align: center;
+}
+
+#contact .container-fluid {
+    padding: 5% 17%;
+}
+
+.contact-small-title {
+    color: #90C4C4;
+}
+
+.contact-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-paragraph-title {
+    font-size: smaller;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    border: 0;
+    box-shadow: 0 1px 10px 1px rgba(0,0,0,0.16), 0 1px 2.5px rgba(0,0,0,0.23);
+    padding: 2% 3%;
+    text-align: left;
+    margin: 60px auto 0;
+    width: 400px;
+}
+
+#contact-information {
+    background-color: #f7f8fc;
+}
+
+#contact-information .container-fluid {
+    padding: 5% 17%;
+}
+
+.card-contact {
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.card-body-title {
+    color: #90C4C4;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #90C4C4;
+}
+
+.card-body-group {
+    padding: 10px;
+}
+
+.card-body-text {
+    color: #000;
+    font-weight: 600;
+}
+
+.google-map {
+    height: 300px;
+    position: relative;
+}
+
+.google-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#contact-message .container-fluid {
+    padding: 5% 17%;
+    background-color: #489C9C;
+}
+
+.contact-message-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+/* Footer */
+
+footer {
+    color: #fff;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #90C4C4;
+}
+
+footer .container-fluid {
+    padding: 5% 17%;
+}
+
+footer .brand-name {
+    color: #FFF;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list-text {
+    margin-bottom: 5px;
+}
+
+.footer-list-text-link {
+    color: #FFF;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+.footer-list-text-link:hover {
+    color: #FFF;
+}
+
+.copyright {
+    text-align: right;
+    color: #FFF;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (max-width: 575px) { 
+    /* Header */
+    #header .container-fluid{
+        padding: 8% 5%;
+    } 
+
+    .header-text {
+        font-size: 2.5rem;
+        padding-bottom: 5%;
+    }
+
+    .header-image {
+        width: 100%;
+    }
+
+    #form-control-header{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Trips  */
+    #trips .container-fluid {
+        padding: 1% 10%;
+    }
+
+    .trips-title {
+        font-size: 2rem;
+    }
+
+    .trips-title::after {
+        width: 50px;
+    }
+    .trips-card-body-title{
+        font-size: 1.5rem;
+    }
+
+    /* Subscribe */
+    #subscribe .container-fluid {
+        padding: 1% 10%;
+    }
+
+    .subscribe-title {
+        font-size: 2rem;
+    }
+
+    .subscribe-title::after{
+        width: 50px;
+    }
+
+    .subscribe-card-body {
+        width: 100%;
+    }
+
+    /* Blog Page */
+    #header-blog .container-fluid {
+        padding: 30% 5% 2%;
+    }
+
+    .header-frame-top-left {
+        height: 80px;
+        top: 0;
+    }
+
+    .header-frame-top-right {
+        height: 80px;
+        top: 0;
+    }
+
+    .header-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .col-header-cerita-image {
+        text-align: center;
+    }
+
+    /* Contact Us Page */
+    #contact .container-fluid {
+        padding: 5% 5%;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+    
+    .contact-paragraph-title {
+        width: 100%;
+    }
+
+    .card-body-title {
+        font-size: 1.2rem;
+    }
+
+    .card-body-text {
+        font-weight: 400;
+    }
+
+    .contact-message-text {
+        font-size: 2.5rem;
+    }
+
+    /* Footer  */
+    footer .container-fluid {
+        padding: 5% 10%;
+    }
+
+    .footer-brand{
+        text-align: center;
+        padding: 2%;
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 2%;
+    }
+}
+
+
+@media (min-width: 768px) { 
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    .header-image {
+        width: 100%;
+    }
+
+    /* Footer  */
+    .footer-list-header {
+        border-bottom: 1px solid #FFF;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Blog Page */
+    .header-frame-top-right {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .mb-responsive {
+        margin-bottom: 20px;
+    }
+
+    /* Header */
+    .header-image {
+        width: 100%;
+    }
+
+   /* Blog Page  */
+    .header-frame-top {
+        display: none;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+     /* Contact Us Page */
+    #contact-information .container-fluid {
+        padding: 5% 5%;
+    }
+
+}
+
+@media (min-width: 1199px) {
+
+}
+
+@media (max-width: 1199px) {
+    /* Blog Page  */
+    .header-cerita-image {
+        height: 150px;
+    }
+
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .header-frame-top {
+        top: 0;
+    }
+}
