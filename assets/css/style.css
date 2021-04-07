@@ -76,6 +76,11 @@ p {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
+.navbar-brand-image {
+    margin-right: 5px;
+}
+
 .brand-name{
     font-family: 'SomaticRounded', sans-serif;
     font-size: 2rem;
@@ -92,13 +97,22 @@ p {
     font-weight: 500;
 }
 
+/* Login Register Modal */
+.modal-dialog {
+    width: 350px;
+}
+
+.modal-content {
+    padding: 10px;
+}
+
 /* Header */
 #header {
     background-color: #EBFAFA;
 }
 
 #header .container-fluid{
-    padding: 8% 17%;
+    padding: 2% 17%;
 }
 
 .header-image{
@@ -106,7 +120,7 @@ p {
 }
 
 .header-text {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     margin-top: 30%;
     padding-bottom: 8px;
 }
@@ -283,11 +297,59 @@ p {
 
 #blog .card {
     position: relative;
-    width: 100%;
+    border-radius: 10px;
+}
+
+#blog .card-body {
+    border-radius: 10px;
+    background-color:#f8f9fa;
+}
+
+#blog .card-body:hover {
+    background-color: #b7d0df;
 }
 
 #blog img {
     width: 100%;
+}
+
+.card-date-blog {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.card-title-blog {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card-btn-blog-wrapper {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: -25px;
+}
+
+#blog .btn-success-custom {
+    background: #23A397;
+    color: #FFF;
+}
+
+#blog .btn-success-custom:hover {
+    background: #90C4C4;
+    color: #23A397;
+}
+
+.card-btn-blog {
+    padding: 10px 50px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 /* Contact Us Page */
@@ -374,6 +436,52 @@ p {
     font-size: 3.5rem;
 }
 
+/* coming soon page */
+#coming-soon {
+    background-color: #ecfbfb;
+    position: relative;
+}
+
+#coming-soon .container-fluid{
+    padding: 10% 5% 0 5%;
+}
+
+.wave-coming-soon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.ladder-coming-soon {
+    height: 500px;
+    position: relative;
+}
+
+.person-coming-soon {
+    height: 550px;
+    position: relative;
+}
+
+.bucket-coming-soon {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    height: 200px;
+}
+
+#coming-soon .col-header-title {
+    align-self: flex-start;
+    text-align: center;
+    padding: 0;
+}
+
+#coming-soon .header-title {
+    margin-top: 30px;
+    font-size: 6rem;
+    color: #46AABD;
+}
+
 /* Footer */
 
 footer {
@@ -422,14 +530,27 @@ footer .brand-name {
 @media (min-width: 576px) {
 }
 
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
+    /* Navbar */
+    .navbar-brand-image {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        top: 10px;
+    }
+    
+    .brand-name{
+        font-size: 1.75rem;
+        position: relative;
+        top: 3px;
+    }
+    
     /* Header */
     #header .container-fluid{
         padding: 8% 5%;
     } 
 
     .header-text {
-        font-size: 2.5rem;
         padding-bottom: 5%;
     }
 
@@ -521,9 +642,9 @@ footer .brand-name {
     }
 
     .contact-message-text {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
-
+    
     /* Footer  */
     footer .container-fluid {
         padding: 5% 10%;
@@ -548,6 +669,10 @@ footer .brand-name {
     /* Header */
     .header-image {
         width: 100%;
+    }
+
+    .header-text {
+        font-size: 2.125rem;
     }
 
     /* Footer  */
@@ -585,6 +710,29 @@ footer .brand-name {
      /* Contact Us Page */
     #contact-information .container-fluid {
         padding: 5% 5%;
+    }
+
+    /* Coming soon page  */
+    .ladder-coming-soon {
+        height: 300px;
+        position: relative;
+    }
+
+    .person-coming-soon {
+        height: 350px;
+        position: relative;
+    }
+
+    #coming-soon .col-header-title {
+        margin-bottom: 50px;
+    }
+
+    #coming-soon .header-title {
+        font-size: 3rem;
+    }
+    
+    .bucket-coming-soon {
+    height: 100px;
     }
 
 }

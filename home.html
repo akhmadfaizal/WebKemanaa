@@ -29,8 +29,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo/logo_kemanaa.png" width="45" height="45" class="d-inline-block align-top" alt="">
-                <span class="brand-name">Kemanaa </span>
+                <img src="assets/img/logo/logo_kemanaa.png" width="45" height="45" class="navbar-brand-image d-inline-block align-top" alt="">
+                <span class="brand-name">kemanaa </span>
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -236,7 +236,7 @@
 
     <!-- LOGIN & REGISTER MODAL -->
     <div class="modal fade" id="loginRegisterModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0">
                 <div class="modal-header align-items-center">
                     <img src="assets/img/logo/logo_kemanaa.png" alt="logo" class="img-fluid mr-3" style="height: 40px;"> 
@@ -295,10 +295,20 @@
                         <button id="btnRegisterUser" class="btn btn-success-custom btn-block mb-4">Register</button>
                     </div>
                 </form>
+
+                <!-- FORM FORGOT PASSWORD -->
+                <form id="formForgotPassword">
+                    <h4>Forgot your password?</h4>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
+
                 <p id="forgotPassword" class="mb-2"><a href="javascript:void(0);" class="text-dark font-weight-bold">Forgot Password?</a></p>
                 <p id="register" class="dont-have-account mb-2">Don’t have an account? <a href="javascript:void(0);" class="text-dark font-weight-bold">Register</a></p>
                 
-                <p id="login">Alredy have an account? <a href="javascript:void(0);" class="text-dark font-weight-bold">Login</a></p> 
+                <p id="login">Already have an account? <a href="javascript:void(0);" class="text-dark font-weight-bold">Login</a></p> 
                 <p class="mt-5">By proceeding, you agree to our <a href="javascript:void(0);" class="text-dark font-weight-bold">Terms of Use</a> and confirm you have read our <a href="javascript:void(0);" class="text-dark font-weight-bold"> Privacy and Cookie</a> Statement.</p>
                 </div>
             </div>

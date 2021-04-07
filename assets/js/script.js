@@ -10,6 +10,7 @@ $("document").ready(function(){
     $("#login").hide();
     $("#formRegister").hide();
     $("#formRegisterProfile").hide();
+    $("#formForgotPassword").hide();
     
     $("#register").click(function(){
         $("#formLogin, #register, #forgotPassword").hide();
