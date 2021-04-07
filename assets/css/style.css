@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    padding-top: 65px;
+    padding-top: 75px;
     text-rendering: optimizeLegibility;
 }
 
@@ -306,7 +306,7 @@ p {
 }
 
 #blog .card-body:hover {
-    background-color: #b7d0df;
+    background-color: #e3f3e4;
 }
 
 #blog img {
@@ -336,13 +336,13 @@ p {
 }
 
 #blog .btn-success-custom {
-    background: #23A397;
+    background: #90C4C4;
     color: #FFF;
 }
 
 #blog .btn-success-custom:hover {
-    background: #90C4C4;
-    color: #23A397;
+    background: #23A397;
+    color: #FFF;
 }
 
 .card-btn-blog {
@@ -358,7 +358,7 @@ p {
 }
 
 #contact .container-fluid {
-    padding: 5% 17%;
+    padding: 2% 17%;
 }
 
 .contact-small-title {
@@ -480,6 +480,37 @@ p {
     margin-top: 30px;
     font-size: 6rem;
     color: #46AABD;
+}
+
+ /* About Us Page */
+#aboutus .container-fluid {
+    padding: 5% 17%;
+}
+
+.aboutus-title {
+    text-align: center;
+    font-size: 5vw;
+}
+
+.aboutus-title::after {
+    display: block;
+    height: 5px;
+    background-color: #90C4C4;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.aboutus-paragraph {
+    padding: 2% 10% 20%;
+    text-align: center;
+}
+
+.aboutus-paragrapah-text {
+    color: #000;
+    margin: 16px 0;
+    font-weight: 500;
 }
 
 /* Footer */
@@ -673,6 +704,19 @@ footer .brand-name {
 
     .header-text {
         font-size: 2.125rem;
+    }
+
+    /* About Us Page  */
+    #aboutus .container-fluid {
+        padding: 5%;
+    }
+
+    .aboutus-title {
+        font-size: 8vw;
+    }
+
+    .aboutus-paragraph {
+        padding: 0 0 100%;
     }
 
     /* Footer  */
